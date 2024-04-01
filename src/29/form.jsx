@@ -64,12 +64,15 @@ export default function Form() {
         Address: "",
         Country: "",
         City: "",
+      },
+      onSubmit: values =>{
+        console.log("Form Data", values);
       }
     })
- console.log("Form values", formik.values);
+//  console.log("Form values", formik.values);
   return (
     <div className="flex justify-center items-center w-screen h-screen">
-    <form className=" bg-blue-200 p-10 rounded-lg shadow-lg space-x-2 space-y-7" >
+    <form className=" bg-blue-200 p-10 rounded-lg shadow-lg space-x-2 space-y-7" onSubmit={formik.handleSubmit} >
         <div className="flex gap-3" id="FullName" >
           <label htmlFor="firstName">First Name:</label>
           <input className="rounded-sm" type="text" placeholder="Enter Your First Name" id="firstName" name="FirstName" value={formik.values.FirstName} onChange={formik.handleChange} />
