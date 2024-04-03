@@ -8,10 +8,10 @@ function Index() {
   return (
     <BrowserRouter>
     <Routes>
-        <Route path='/' element={AppLayout}>
-            <Route path='/Home' element={Home}/>
-            <Route path='/AboutUs' element={About}/>
-            <Route path='/ContactUs' element={Contactus}/>
+        <Route path='/' element={<AppLayout/>}>
+            <Route path='/Home' element={<Home/>}/>
+            <Route path='/AboutUs' element={<About/>}/>
+            <Route path='/ContactUs' element={<Contactus/>}/>
         </Route>
     </Routes>
     </BrowserRouter>
