@@ -4,18 +4,18 @@ import Home from '../pages/Home'
 import Contactus from '../pages/contactus'
 import About from '../pages/about'
 import AppLayout from '../layout'
-function index() {
+function Index() {
   return (
     <BrowserRouter>
     <Routes>
-        <Route element={AppLayout}>
+        <Route path='/' element={AppLayout}>
             <Route path='/Home' element={Home}/>
             <Route path='/AboutUs' element={About}/>
-            <Route path='ContactUs' element={Contactus}/>
+            <Route path='/ContactUs' element={Contactus}/>
         </Route>
     </Routes>
     </BrowserRouter>
   )
 }
 
-export default index
+export default Index

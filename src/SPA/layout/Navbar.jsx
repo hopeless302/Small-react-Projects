@@ -7,21 +7,16 @@ export default function Navbar() {
         <div className=" space-x-5 p-5 ">Logo</div>
         <ul className=" flex space-x-10 p-5 ">
           <li>
-            <a href="">Home</a>
+            <a href="/Home">Home</a> 
           </li>
           <li>
-            <a href="">about us</a>
+            <a href="/AboutUs">about us</a>
           </li>
           <li>
-            <a href=""> contact us</a>
+            <a href="/ContactUs"> contact us</a>
           </li>
         </ul>
       </nav>
-      <div className=" flex " >
-        <p>Home</p>
-        <p>about us</p>
-        <p>Contact us</p>
-      </div>
     </>
   );
 }
