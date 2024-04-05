@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import SignUp from './SignUp/SignUp.jsx'
 // import SimpleSlider from './Accordion_ImageCarousel/Index.jsx'
-import Weather from './WeatherApp/Weather.jsx'
+// import Weather from './WeatherApp/Weather.jsx'
 // import CenterScreen from './BMI/CenterScreen.jsx'
 // import Index from './SPA/Router/index.jsx'
 // import Index29 from './29/index.jsx'
@@ -12,8 +13,9 @@ import Weather from './WeatherApp/Weather.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <SignUp/>
     {/* <SimpleSlider/> */}
-    <Weather/>
+    {/* <Weather/> */}
     {/* <CenterScreen/> */}
     {/* <Index/> */}
     {/* <Positions></Positions> */}
