@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'                                                   
-import App from './ReactRounter/App'
+import PasswordG from './PasswordG/PasswordG'
+// import App from './ReactRounter/App'
 
 // import SignUp from './SignUp/SignUp.jsx'
 // import SimpleSlider from './Accordion_ImageCarousel/Index.jsx'
@@ -34,7 +35,8 @@ import App from './ReactRounter/App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App/>
+    <PasswordG/>
+    {/* <App/> */}
     {/* <SimpleSlider/> */}
     {/* <Weather/> */}
     {/* <CenterScreen/> */}
