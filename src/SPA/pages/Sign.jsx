@@ -67,3 +67,7 @@ function Sign({ onLogin }) {
 }
 
 export default Sign;
+
+/*I am a beginner and trying to make to login page which can show the other pages when I enter the email and password in it and there is a token in it and I don't remember what I need to do 
+I remember sir said I have to see if token is there in local stronge than we can login and see the pages other wise we can't able to see the pages 
+can you explain me what exactly I have to do ?*/
