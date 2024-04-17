@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'                                                   
-import PasswordG from './PasswordG/PasswordG'
+import RouterForm from './5-4-2024/router-form'
+// import PasswordG from './PasswordG/PasswordG'
 // import App from './ReactRounter/App'
 
 // import SignUp from './SignUp/SignUp.jsx'
@@ -35,7 +36,8 @@ import PasswordG from './PasswordG/PasswordG'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <PasswordG/>
+    <RouterForm/>
+    {/* <PasswordG/> */}
     {/* <App/> */}
     {/* <SimpleSlider/> */}
     {/* <Weather/> */}

@@ -7,7 +7,7 @@ const SignUp = () => {
   const handleSubmit = async (values, { setSubmitting }) => {
     console.log(values);
     try {
-      await axios.post("http://localhost:4000/users", values);
+      await axios.post("http://localhost:7000/users", values);
     } catch (error) {
       console.log(error.message);
     }
