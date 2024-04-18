@@ -34,3 +34,4 @@ localStorage.setItem("token", "QWERTYUIOP");: This line sets an item in the brow
 navigate("/home");: After setting the token in local storage, this line navigates the user to the "/home" route. This is typically the route that authenticated users are redirected to after successfully signing in. The navigate function is provided by the useNavigate hook from React Router, and it allows for programmatic navigation within the React component.
 In summary, this part of the code handles the logic for a successful sign-in attempt. It sets the authentication token in local storage and navigates the user to the "/home" route, indicating a successful authentication process.
 
+WE need to use npm bycrptjs in it
