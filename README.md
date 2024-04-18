@@ -13,3 +13,5 @@ return (<Outlet />): If the user is authenticated (meaning the token exists), th
 Finally, export default AuthRequired exports the AuthRequired component so that it can be imported and used in other parts of the application.
 
 The reason we use useLocation here is to access the current location object. We need this object to pass the current location as state when redirecting the user to the login page. This helps in implementing a smooth redirect flow where the user can be redirected back to the original page after successful authentication.
+
+## we need axious to intead of fetch because its a prebuild json that mean we don't need to define the json. 
