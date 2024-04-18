@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'                                                   
-import RouterForm from './5-4-2024/router-form'
+import AuthRequired from './UpdatingFriendCode/Auth'
 // import PasswordG from './PasswordG/PasswordG'
 // import App from './ReactRounter/App'
 
@@ -36,7 +36,7 @@ import RouterForm from './5-4-2024/router-form'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterForm/>
+    <AuthRequired/>
     {/* <PasswordG/> */}
     {/* <App/> */}
     {/* <SimpleSlider/> */}

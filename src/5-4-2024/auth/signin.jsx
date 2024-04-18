@@ -8,7 +8,7 @@ const Signin = () => {
   const handleSubmit = async (values, { setSubmitting }) => {
     console.log(values);
     try {
-      const { data } = await axios.get("http://localhost:4000/users");
+      const { data } = await axios.get("http://localhost:7000/users");
       console.log(data);
       const userExists =  data.find(
         (element) =>
