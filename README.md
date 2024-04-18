@@ -15,3 +15,22 @@ Finally, export default AuthRequired exports the AuthRequired component so that 
 The reason we use useLocation here is to access the current location object. We need this object to pass the current location as state when redirecting the user to the login page. This helps in implementing a smooth redirect flow where the user can be redirected back to the original page after successful authentication.
 
 ## we need axious to intead of fetch because its a prebuild json that mean we don't need to define the json. 
+
+
+Yes, that's correct. Let's break down this part of the code:
+
+
+if (userExists){
+  console.log("Successfull");
+  localStorage.setItem("token", "QWERTYUIOP");
+  navigate("/home");
+}
+else {
+  console.log("Invalid")
+}
+if (userExists): This condition checks whether userExists is truthy. In this context, userExists likely represents the result of checking if the user's credentials (email and password) match any existing user's credentials in the system. If there is a user with matching credentials, userExists will be truthy, indicating a successful sign-in attempt.
+console.log("Successfull");: If userExists is truthy, meaning the user's credentials are valid and exist in the system, this line logs "Successfull" to the console. This is just a message indicating that the sign-in attempt was successful.
+localStorage.setItem("token", "QWERTYUIOP");: This line sets an item in the browser's localStorage. The item key is "token", and the value is "QWERTYUIOP". This is where the token is being stored in the browser's local storage.Storing the token in local storage is a common approach in web applications for managing user authentication. The token serves as a form of authentication and is typically sent with each request to the server to identify the user and grant access to protected resources.
+navigate("/home");: After setting the token in local storage, this line navigates the user to the "/home" route. This is typically the route that authenticated users are redirected to after successfully signing in. The navigate function is provided by the useNavigate hook from React Router, and it allows for programmatic navigation within the React component.
+In summary, this part of the code handles the logic for a successful sign-in attempt. It sets the authentication token in local storage and navigates the user to the "/home" route, indicating a successful authentication process.
+
