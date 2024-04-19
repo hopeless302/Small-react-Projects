@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'                                                   
-import AuthRequired from './UpdatingFriendCode/Auth'
+import SignUp from './5-4-2024/auth/signup'
 // import PasswordG from './PasswordG/PasswordG'
 // import App from './ReactRounter/App'
 
@@ -36,7 +36,8 @@ import AuthRequired from './UpdatingFriendCode/Auth'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthRequired/>
+    <SignUp/>
+    {/* <AuthRequired/> */}
     {/* <PasswordG/> */}
     {/* <App/> */}
     {/* <SimpleSlider/> */}
